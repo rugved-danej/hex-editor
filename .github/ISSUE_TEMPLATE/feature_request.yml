@@ -1,0 +1,29 @@
+name: 💡 Feature Request
+description: Suggest an idea for this plugin.
+title: "[FEAT]: "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Have an amazing idea? Let's hear it! 
+        *The Hex Editor is designed to be a lightweight but powerful binary tool.*
+  - type: textarea
+    id: description
+    attributes:
+      label: Feature Description
+      description: A clear and concise description of what you want.
+    validations:
+      required: true
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use Case / Motivation
+      description: Why do you need this feature? What problem does it solve?
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives Considered
+      description: A clear and concise description of any alternative solutions or features you've considered.

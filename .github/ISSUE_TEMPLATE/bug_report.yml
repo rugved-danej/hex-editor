@@ -1,0 +1,51 @@
+name: 🐛 Bug Report
+description: Create a report to help us improve the Hex Editor plugin.
+title: "[BUG]: "
+labels: ["bug", "triage"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this bug report! 
+        *Please ensure you are on the latest version of the Hex Editor and Acode before submitting.*
+  - type: input
+    id: version
+    attributes:
+      label: Hex Editor Version
+      description: Which version of the plugin are you using? (e.g. v1.0.0)
+      placeholder: v1.0.0
+    validations:
+      required: true
+  - type: input
+    id: acode_version
+    attributes:
+      label: Acode Version / Version Code
+      description: Which version of Acode are you running?
+      placeholder: v1.8.8 (300)
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Bug Description
+      description: A clear and concise description of what the bug is.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to Reproduce
+      description: Please provide clear steps to reproduce the behavior.
+      placeholder: |
+        1. Open file '...'
+        2. Tap on '...'
+        3. See error
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected Behavior
+      description: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
